@@ -208,5 +208,5 @@ footer {
     font-weight: lighter;
     font-style: italic;
     font-size: 0.8rem;
-    color: var(--accent2-color);
+    color: var(--text-color2);
 }
