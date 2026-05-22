@@ -31,11 +31,12 @@ body {
     font-family: var(--body-font);
 }
 
+
 header {
     background-color: var(--primary-color);
-    padding: 20px 0 0 0;
-    text-align: center;
     color: var(--text-color2);
+    text-align: center;
+    padding: 20px 0 0 0;
 }
 
 header span {
@@ -46,33 +47,27 @@ header span {
 }
 
 nav {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
     padding: 14px 20px;
 }
 
 .menu {
-    list-style: none;
     display: flex;
-    justify-content: center;
+    list-style: none;
     gap: 2rem;
+    justify-content: center;
     background-color: var(--accent2-color);
-    margin: 0;
-    padding: 10px;
+    padding: 15px;
 }
 
 .menu li a {
-    color: var(--text-color2);
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    color: var(--text-color2);
+    padding: 8px 16px;
     font-size: 1rem;
     font-family: var(--heading-font);
     transition: background-color 0.4s ease, transform 0.4s ease;
     display: block;
 }
-
 
 .menu li a:hover {
     background-color: var(--accent3-color);
@@ -80,21 +75,18 @@ nav {
 }
 
 .name {
-    grid-column: 1/-1;
-    text-align: center;
-    padding: 0px;
+    padding: 10px;
     font-size: 1.5rem;
     color: var(--text-color1);
-    font-family: var(--text-font)
+    grid-column: 1/-1;
+    text-align: center;
 }
 
 main {
     display: grid;
-    grid-template-columns: 2.3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 40px;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 10px 0;
+    padding: 10px 0 0;
 }
 
 .card {
@@ -136,29 +128,8 @@ main {
     box-shadow: 0 4px 15px rgba(1, 0, 0, 0.621);
 }
 
-.vzla-info {
-    text-align: center;
-    padding: 1.5rem;
-
-}
-
-.vzla-info h3 {
-    font-size: 24px;
-    border-bottom: 1px solid var(--accent2-color);
-    color: var(--text-color1);
-}
-
 .vzla-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.vzla-text {
-    text-align: justify;
-    margin-right: 80px;
-
 }
 
 .vzla-container img {
@@ -167,42 +138,7 @@ main {
     margin: 40px 40px 5px 40px;
     border-radius: 5px;
     box-shadow: 0 4px 15px rgba(1, 0, 0, 0.621);
-}
 
-.vzla-container figcaption {
-    font-style: italic;
-    font-size: 0.85rem;
-    color: var(--primary-color);
-    margin-top: 0;
-}
-
-
-
-.resources-list {
-    padding: 3rem;
-    text-align: justify;
-    justify-content: left;
-    margin-left: 20px;
-
-}
-
-.resources-list a {
-    text-decoration: none;
-    color: var(--text-color1);
-    line-height: 2.5;
-    transition: color 0.4s ease, transform 0.4s ease;
-}
-
-
-.resources-list a:hover {
-    color: var(--accent3-color);
-}
-
-#modify {
-    font-weight: lighter;
-    font-style: italic;
-    font-size: 0.8rem;
-    color: var(--text-color2);
 }
 
 footer {

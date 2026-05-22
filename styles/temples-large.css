@@ -1,0 +1,25 @@
+
+@media (min-width: 768px) {    
+    h1 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+    #hamburgerBtn {
+        display: none;
+    }
+   
+    nav {
+        justify-content: flex-end;
+    }
+    .navigation {
+        display: flex; 
+        flex-direction: row; 
+        gap: 2rem;
+    }
+
+    .gallery-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+        
+}
