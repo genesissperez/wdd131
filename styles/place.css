@@ -61,8 +61,6 @@ body {
     margin: 20px auto;
     max-width: 400px;
     width: 900%;
-    padding: 15px;
-
     font-family: var(--body-font);
     padding: 25px;
     line-height: 1.6;
@@ -114,6 +112,12 @@ body {
     display: none;
 }
 
+.weather-box h2::after {
+    content: " 🌤️";
+    position: absolute;
+    right: 10px;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-color2);
@@ -148,14 +152,14 @@ footer {
         margin-right: 20px;
     }
 
-    .mobile-weather-icon {
+    .weather-box h2::after {
+        content: " 🌤️";
         display: none;
+
     }
 
     .desktop-weather-icon {
         display: inline;
         width: 30px;
-
-
     }
 }
