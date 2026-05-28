@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #051b5e;
+    --accent1-color: #1f7e00;
+    --background-color: #f3f5f6;
+    --text-color1: #051b5e;
+    --text-color2: #ffffff;
+
+    --shadow-color: #00000065;
+    --white-translucent: #FFFFFFD9;
+
+    --heading-font: "Verdana", "Geneva", sans-serif;
+    --body-font: "Roboto", Arial, sans-serif;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    text-align: left;
+    display: block;
+    border-bottom: 10px solid var(--accent1-color);
+
+}
+
+header h1 {
+    color: var(--text-color2);
+    font-family: var(--heading-font);
+    font-size: 2.7rem;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    position: relative;
+    width: 100%;
+
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-box,
+.weather-box {
+    background-color: var(--white-translucent);
+    position: static;
+    margin: 20px auto;
+    max-width: 400px;
+    width: 900%;
+    padding: 15px;
+
+    font-family: var(--body-font);
+    padding: 25px;
+    line-height: 1.6;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px var(--shadow-color);
+
+
+}
+
+.info-box ul,
+.weather-box ul {
+    text-align: left;
+}
+
+.info-box {
+    top: 15rem;
+    left: 3rem;
+    overflow: visible;
+}
+
+.info-box h2,
+.weather-box h2 {
+    background-color: var(--accent1-color);
+    color: var(--text-color2);
+    padding: 10px 40px;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+
+.info-box li {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.weather-box {
+    top: 20rem;
+    right: 3rem;
+    overflow: visible;
+}
+
+.weather-box li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+
+.desktop-weather-icon {
+    display: none;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    padding: 20px;
+    font-family: var(--body-font);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .info-box,
+    .weather-box {
+        position: absolute;
+        width: 350px;
+
+    }
+
+    .info-box {
+        top: 15rem;
+        left: 3rem;
+    }
+
+    .weather-box {
+        top: 20rem;
+        right: 3rem;
+    }
+
+    .info-box h2,
+    .weather-box h2 {
+        margin-left: -40px;
+        margin-right: 20px;
+    }
+
+    .mobile-weather-icon {
+        display: none;
+    }
+
+    .desktop-weather-icon {
+        display: inline;
+        width: 30px;
+
+
+    }
+}
