@@ -103,7 +103,10 @@ createTempleCard(temples);
 function createTempleCard(filteredTemples) {
 
     const galleryTitle = document.querySelector("#gallery-title");
-    galleryTitle.textContent = `${filteredTemples.length} temples found`;
+    if (galleryTitle) {
+        galleryTitle.textContent = `${filteredTemples.length} temples found`;
+    }
+
 
     const gallery = document.querySelector(".gallery-content");
     gallery.innerHTML = "";
