@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131-Product Review Form- Génesis Pérez</title>
+    <meta name="description"
+        content="WDD 131 – Website with a form to collect user feedback on our various products, including 5-star ratings and written comments.">
+    <meta name="author" content="Genesis Perez">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/form.css">
+
+    <script src="./scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1> Product Review Form</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div class="form-group">
+                <label for="product-name" class="required">Product Name
+
+                </label>
+                <select id="product-name" name="productName" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="star-a" class="required">Overall Rating
+                </label>
+
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5" required />
+                    <label for="star-a"></label>
+
+                    <input type="radio" name="stars" id="star-b" value="4" required />
+                    <label for="star-b"></label>
+
+                    <input type="radio" name="stars" id="star-c" value="3" required />
+                    <label for="star-c"></label>
+
+                    <input type="radio" name="stars" id="star-d" value="2" required />
+                    <label for="star-d"></label>
+
+                    <input type="radio" name="stars" id="star-e" value="1" required />
+                    <label for="star-e"></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="install-date" class="required">Date of Installation</label>
+
+                <input type="date" id="install-date" name="installDate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Useful Features</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="feature1" name="features" value="Ease of Use">
+                    <label for="feature1">Ease of Use</label>
+
+                    <input type="checkbox" id="feature2" name="features" value="Performance">
+                    <label for="feature2">Performance</label>
+
+                    <input type="checkbox" id="feature3" name="features" value="Durability">
+                    <label for="feature3">Durability</label>
+
+                    <input type="checkbox" id="feature4" name="features" value="Desing">
+                    <label for="feature4">Desing</label>
+
+                    <input type="checkbox" id="feature5" name="features" value="Customer Support">
+                    <label for="feature5">Customer Support</label>
+
+                    <input type="checkbox" id="feature6" name="features" value="Value for Money">
+                    <label for="feature6">Value for Money</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Written Review">Written Review</label>
+                <textarea id="written-review" name="writtenReview" rows="5"
+                    placeholder="Share your experience with this product..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="user-name">User Name</label>
+                <input type="text" id="user-name" name="userName" placeholder="Enter your name (optional)">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit Review" class="submit-btn">
+
+            </div>
+
+        </form>
+    </main>
+</body>
+
+<footer>
+    <p>
+        ©
+        <span id="currentyear"></span>
+        🔹 Génesis Pérez🔹 Venezuela 🔹
+    </p>
+    <p id="modify"> <span id="lastModified"></span></p>
+
+</footer>
+
+</html>
