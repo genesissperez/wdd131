@@ -25,16 +25,15 @@
     <main>
         <form method="get" action="review.html">
             <div class="form-group">
-                <label for="product-name" class="required">Product Name
+                <label for="product-name" class="required">Product Name</label>
 
-                </label>
                 <select id="product-name" name="productName" required>
                     <option value="" disabled selected>Select a Product...</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label class="required">Overall Rating</label>
+                <label for="product-rating" class="required">Overall Rating</label>
 
                 <div class="star-rating">
                     <input type="radio" name="stars" id="star-a" value="5" required />
@@ -100,16 +99,16 @@
 
         </form>
     </main>
+
+    <footer>
+        <p>
+            ©
+            <span id="currentyear"></span>
+            🔹 Génesis Pérez🔹 Venezuela 🔹
+        </p>
+        <p id="modify"> <span id="lastModified"></span></p>
+
+    </footer>
 </body>
-
-<footer>
-    <p>
-        ©
-        <span id="currentyear"></span>
-        🔹 Génesis Pérez🔹 Venezuela 🔹
-    </p>
-    <p id="modify"> <span id="lastModified"></span></p>
-
-</footer>
 
 </html>
