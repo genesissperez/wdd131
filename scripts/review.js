@@ -1,6 +1,8 @@
 //Last modifications
-document.getElementById("lastModified").innerHTML = document.lastModified;
-lastModified.textContent = `📅 Last Modification: ${document.lastModified}`;
+const lastModifiedElement = document.getElementById("lastModified");
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = `📅 Last Modification: ${document.lastModified}`;
+}
 
 //display the current year
 const year = document.querySelector("#currentyear");
