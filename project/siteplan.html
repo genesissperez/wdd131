@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Site Plan - Latitud Español</title>
+    <meta name="description"
+        content="Planning document for the architecture, design, and requirements of the Latitud Español website.">
+    <meta name="author" content="Génesis Pérez">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Verdana&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/siteplan.css">
+    <script src="./scripts/siteplan.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Website Site Plan:<br> Latitud Español</h1>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <div class="site-name-enfasis">
+                <p class="highlight"><strong>Latitud Español</strong></p>
+            </div>
+            <p>I chose this name because "Latitud" (Latitude) evokes a geographic coordinate and a global meeting point.
+                It represents how the Spanish language connects students from different parts of the world under the
+                same dynamic, cultural, and professional learning space.</p>
+
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The purpose of Latitud Español is to provide an interactive, educational web environment for adults who
+                want to learn or practice the fundamentals of the Spanish language. The site focuses on offering clear
+                theoretical resources, highlighting the irreplaceable value of feedback and support from a qualified
+                human tutor over automated AI solutions, and providing dynamic practice tools with immediate validation.
+            </p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Target Audience Scenarios</h2>
+            <div class="scenario-box">
+                <h3>Scenario 1</h3>
+                <p><strong>Visitor Question:</strong> What is the real difference between using the verbs "ser" and
+                    "estar," and how can I learn to contrast them easily?</p>
+                <p><strong>Site Answer:</strong> The <em>Lessons</em> page will feature organized tables and dynamic
+                    content focused on resolving this and other fundamental grammar and vocabulary questions.</p>
+            </div>
+            <div class="scenario-box">
+                <h3>Scenario 2</h3>
+                <p><strong>Visitor Question:</strong> How can I immediately evaluate if I understood the module's basic
+                    vocabulary before scheduling a personal tutoring session?</p>
+                <p><strong>Site Answer:</strong> The <em>Practice</em> page will include an interactive form powered by
+                    JavaScript that will evaluate student answers in real time, offering immediate feedback without
+                    reloading the browser.</p>
+            </div>
+        </section>
+
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <p>Selected colors reflect professionalism, cultural energy, and academic growth. They will be applied
+                consistently
+                across the final website.</p>
+
+            <div class="color-palette-container">
+                <div class="color-swatch palette-blue">
+                    <span class="color-hex">#192F8F <br> (Dark Blue) </span>
+
+                    <span class="color-usage">Headings, navigation backgrounds, footer, main branding</span>
+                </div>
+
+                <div class="color-swatch palette-green">
+                    <span class="color-hex">#27AE60 <br> (Green)</span>
+
+                    <span class="color-usage">Success feedback, interactive active states, secondary accents</span>
+                </div>
+
+                <div class="color-swatch palette-fuchsia">
+                    <span class="color-hex">#F0297C <br> (Fuchsia)</span>
+                    <span class="color-usage">Highlights, icons, links, calls-to-action, hover effects</span>
+                </div>
+
+                <div class="color-swatch palette-gray">
+                    <span class="color-hex">#f5f7fb<br> (Light Gray)</span>
+                    <span class="color-usage">Background for content sections, lesson cards, wireframe grids</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>To ensure optimal readability and visual hierarchy on both mobile devices and desktop screens, two font
+                families have been selected:</p>
+            <ul>
+                <li><strong>Heading Font (H1, H2, H3):</strong> <em>Verdana, Geneva, sans-serif</em>. A robust, clean
+                    font with an excellent presentation for main titles.</li>
+                <li><strong>Body Font (Paragraphs, lists):</strong> <em>Roboto, Arial, sans-serif</em>. Specifically
+                    designed for screens, ensuring that extensive grammatical explanations are easy to read.</li>
+            </ul>
+        </section>
+
+        <section id="wireframes">
+            <h2>Wireframes (Home Page Layout)</h2>
+            <p>Below are the visual layout plans projected for the home page in both mobile and desktop views:</p>
+
+            <div class="wireframe-gallery">
+
+                <div class="wireframe-item">
+                    <h3>Mobile View (Small screens)</h3>
+                    <img src="./images/wireframe-mobile.jpg"
+                        alt="Structural sketch of the mobile view showing a collapsible hamburger menu and single-column layout sections"
+                        class="wireframe-img">
+                </div>
+                <div class="wireframe-item">
+                    <h3>Desktop View (Large screens)</h3>
+                    <img src="./images/wireframe-desktop.jpg"
+                        alt="Structural sketch of the desktop view showing the navigation menu fully extended horizontally and blocks distributed in columns"
+                        class="wireframe-img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            ©
+            <span id="currentyear"></span>
+            🔹 Génesis Pérez🔹 Venezuela 🔹
+        </p>
+        <p id="modify"> <span id="lastModified"></span></p>
+
+    </footer>
+</body>
+
+</html>
