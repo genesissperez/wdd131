@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LATITUD ESPAÑOL</title>
+    <meta name="description"
+        content="A website dedicated to learning Spanish as a foreign language. It contains study material and practical exercises">
+    <meta name="author" content="Genesis Perez">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/form.css">
+    <script src="./scripts/projectweb.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo-sp.webp" alt="Latitud Español. Logo">
+            <button type="button" id="hamburgerBtn"></button>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="activity.html">Activities</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="user-greeting" id="userGreeting">
+        </div>
+    </header>
+
+    <main>
+        <div class="title-gallery">
+            <h1 class="practice-title">Grammar Practice: <br> Verbs SER & ESTAR</h1>
+
+        </div>
+
+        <form method="get" action="review.html">
+
+            <div class="form-group">
+                <label for="student-name" class="required">Full Name</label>
+                <input type="text" id="student-name" name="studentName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="student-email" class="required">Email Address</label>
+                <input type="email" id="student-email" name="studentEmail" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group-container">
+                <p class="exercise-instruction required">Exercise 1: Complete the sentences using the correct pair of
+                    verbs:</p>
+
+                <div class="sub-exercise">
+                    <label for="exercise-1a">a) Ella ______ de Venezuela y ahora ______ en Caracas.</label>
+                    <select id="exercise-1a" name="exercise1a" required>
+                        <option value="" disabled selected>Select...</option>
+                        <option value="es-es">es / es</option>
+                        <option value="esta-esta">está / está</option>
+                        <option value="es-esta">es / está</option>
+                        <option value="esta-es">está / es</option>
+                    </select>
+                </div>
+
+                <div class="sub-exercise">
+                    <label for="exercise-1b">b) Hoy ______ lunes y el clima ______ muy frío.</label>
+                    <select id="exercise-1b" name="exercise1b" required>
+                        <option value="" disabled selected>Select...</option>
+                        <option value="es-es">es / es</option>
+                        <option value="es-esta">es / está</option>
+                        <option value="esta-es">está / es</option>
+                        <option value="esta-esta">está / está</option>
+                    </select>
+                </div>
+
+                <div class="sub-exercise">
+                    <label for="exercise-1c">c) Ellos ______ estudiantes y ______ en la biblioteca ahora.</label>
+                    <select id="exercise-1c" name="exercise1c" required>
+                        <option value="" disabled selected>Select...</option>
+                        <option value="son-son">son / son</option>
+                        <option value="estan-estan">están / están</option>
+                        <option value="estan-son">están / son</option>
+                        <option value="son-estan">son / están</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group-container">
+                <p class="exercise-instruction required">Exercise 2: Choose the correct verb form for each context:</p>
+
+                <div class="sub-exercise">
+                    <label>a) Professional occupations: "Nosotros ______ profesores."</label>
+                    <div class="radio-flex-container">
+                        <div>
+                            <input type="radio" name="verbChoiceA" id="choice-ser-a" value="SER" required />
+                            <label for="choice-ser-a">Somos (SER)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="verbChoiceA" id="choice-estar-a" value="ESTAR" required />
+                            <label for="choice-estar-a">Estamos (ESTAR)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-exercise">
+                    <label>b) Geographic locations: "París ______ en Francia."</label>
+                    <div class="radio-flex-container">
+                        <div>
+                            <input type="radio" name="verbChoiceB" id="choice-ser-b" value="SER" required />
+                            <label for="choice-ser-b">Es (SER)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="verbChoiceB" id="choice-estar-b" value="ESTAR" required />
+                            <label for="choice-estar-b">Está (ESTAR)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-exercise">
+                    <label>c) Emotional moods: "Yo ______ muy feliz hoy."</label>
+                    <div class="radio-flex-container">
+                        <div>
+                            <input type="radio" name="verbChoiceC" id="choice-ser-c" value="SER" required />
+                            <label for="choice-ser-c">Soy (SER)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="verbChoiceC" id="choice-estar-c" value="ESTAR" required />
+                            <label for="choice-estar-c">Estoy (ESTAR)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p class="exercise-instruction">Exercise 3: Select ALL the contexts where the verb <strong>SER</strong>
+                    must be
+                    used.</p>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="use1" name="serUses" value="Nationality">
+                        <label for="use1">Origin and Nationality</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="use2" name="serUses" value="Temporary Location">
+                        <label for="use2">Current Temporary Location</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="use3" name="serUses" value="Time and Date">
+                        <label for="use3">Time and Date</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="use4" name="serUses" value="Temporary Mood">
+                        <label for="use4">Temporary Moods / Feelings</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="use5" name="serUses" value="Permanent Characteristics">
+                        <label for="use5">Essential or Permanent Characteristics</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="use6" name="serUses" value="Material">
+                        <label for="use6">Material an object is made of</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="exercise-title-label">Exercise 4: Open Response</label>
+                <p class="exercise-prompt-text">Write two sentences describing your current city and your nationality
+                    using SER
+                    and ESTAR correctly.</p>
+                <textarea id="written-exercise" name="writtenExercise" rows="5"
+                    placeholder="Example: Yo soy de Venezuela. Ahora estoy en Caracas..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit Practice" class="submit-btn">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            ©
+            <span id="currentyear"></span>
+            🔹 Latitud Español🔹 Venezuela 🔹
+        </p>
+
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.png" alt="Facebook Icon" width="30">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/instagram.png" alt="Instagram Icon" width="30">
+
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/linkeding.png" alt="LinkedIn Icon" width="30">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
